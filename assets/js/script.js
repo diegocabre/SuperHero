@@ -2,7 +2,7 @@ $(document).ready(function () {
   $("#btn").click(function () {
     if (
       $("#input").val() !== "" &&
-      $("#input").val() <= 736 &&
+      $("#input").val() <= 731 &&
       $("#input").val() > 0
     ) {
       window.location.href = "./resultado.html?id=" + $("#input").val();
@@ -24,7 +24,6 @@ $(document).ready(function () {
   $.ajax({
     url: "https://superheroapi.com/api.php/2619421814940190/" + superheroId,
     success: function (data) {
-      console.log(data);
       renderData(data);
       renderChart(data);
     },

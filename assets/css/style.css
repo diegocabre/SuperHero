@@ -63,6 +63,12 @@ body {
   width: 60px;
   height: auto;
 }
+
+#logo a{
+  color: #fff;
+}
+
+
 #btn {
   display: block;
   margin: 0 auto;
